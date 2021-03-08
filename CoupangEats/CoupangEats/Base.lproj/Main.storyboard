@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoupangEats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="1750" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="white" maximumZoomScale="8" translatesAutoresizingMaskIntoConstraints="NO" id="h4E-zi-vxO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1750"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="스크린샷 2020-11-28 오후 2.09.26" id="yoW-cu-sfg">
+                                        <rect key="frame" x="0.0" y="-13" width="414" height="196"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" dataMode="prototypes" id="FqY-0D-Vp6">
+                                        <rect key="frame" x="0.0" y="173" width="414" height="123"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="rlm-Gn-AYy">
+                                            <size key="itemSize" width="85" height="116"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GridTopCell" id="pHL-Ul-B7q" customClass="GridTopCell" customModule="CoupangEats" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="3.6666666666666665" width="85" height="116"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TzX-s1-MCa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="85" height="116"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DVx-AL-J6U">
+                                                            <rect key="frame" x="0.0" y="0.0" width="85" height="81"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ff5-ha-lmu">
+                                                            <rect key="frame" x="8" y="89" width="69" height="18"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="ff5-ha-lmu" firstAttribute="leading" secondItem="TzX-s1-MCa" secondAttribute="leading" constant="8" id="1c2-8f-W4h"/>
+                                                        <constraint firstAttribute="trailing" secondItem="DVx-AL-J6U" secondAttribute="trailing" id="71g-EI-1Ws"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ff5-ha-lmu" secondAttribute="trailing" constant="8" id="LLi-0j-Uqk"/>
+                                                        <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="DVx-AL-J6U" secondAttribute="bottom" constant="51" id="O9X-qP-Zqf"/>
+                                                        <constraint firstItem="ff5-ha-lmu" firstAttribute="top" secondItem="TzX-s1-MCa" secondAttribute="top" constant="84" id="YBb-1y-kwn"/>
+                                                        <constraint firstItem="DVx-AL-J6U" firstAttribute="top" secondItem="TzX-s1-MCa" secondAttribute="top" id="ZHZ-AR-Ahw"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ff5-ha-lmu" secondAttribute="bottom" constant="14" id="hzs-fc-zNo"/>
+                                                        <constraint firstItem="DVx-AL-J6U" firstAttribute="leading" secondItem="TzX-s1-MCa" secondAttribute="leading" id="i3O-lg-q82"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="85" height="116"/>
+                                                <connections>
+                                                    <outlet property="imgView" destination="DVx-AL-J6U" id="BTS-im-pvj"/>
+                                                    <outlet property="nameLable" destination="ff5-ha-lmu" id="ewd-UI-dGH"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="F8z-fT-dPL"/>
+                                        </connections>
+                                    </collectionView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인기 프렌차이즈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h5Y-NF-ziq">
+                                        <rect key="frame" x="14" y="310" width="126" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="P96-B4-yQI">
+                                        <rect key="frame" x="362" y="310" width="36" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="arrow.forward" catalog="system"/>
+                                    </button>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" dataMode="prototypes" id="sST-A1-e7U">
+                                        <rect key="frame" x="0.0" y="342" width="414" height="344"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r9i-XW-m5F">
+                                            <size key="itemSize" width="253" height="343"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="89" height="50"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GridBottomCell" id="iw7-ty-RaD" customClass="GridBottomCell" customModule="CoupangEats" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.66666666666666663" width="253" height="343"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ppM-4H-Xsb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="253" height="343"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="KW9-6u-zzU">
+                                                            <rect key="frame" x="18" y="35" width="214" height="183"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="179" id="pg0-13-Sjy"/>
+                                                                <constraint firstAttribute="width" constant="216" id="uEf-g5-8ng"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" id="UBo-K9-Mi0">
+                                                            <rect key="frame" x="18" y="258.66666666666669" width="16" height="19.666666666666657"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" systemColor="systemYellowColor"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="coC-Fu-JAh">
+                                                            <rect key="frame" x="18" y="222" width="197" height="25"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cZj-bW-bLh">
+                                                            <rect key="frame" x="16" y="284" width="110" height="32"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="27" id="1SV-JA-vJj"/>
+                                                                <constraint firstAttribute="width" constant="112" id="Ft9-P8-gX4"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gyJ-q2-q57">
+                                                            <rect key="frame" x="18" y="284" width="110" height="31"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="INE-s4-jMH">
+                                                            <rect key="frame" x="39" y="261" width="89" height="15"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="coC-Fu-JAh" firstAttribute="top" secondItem="ppM-4H-Xsb" secondAttribute="top" constant="222" id="Bgc-Ol-ffe"/>
+                                                        <constraint firstItem="coC-Fu-JAh" firstAttribute="leading" secondItem="ppM-4H-Xsb" secondAttribute="leading" constant="18" id="BnX-ME-ZE3"/>
+                                                        <constraint firstAttribute="bottom" secondItem="INE-s4-jMH" secondAttribute="bottom" constant="68" id="BqE-dc-ZCN"/>
+                                                        <constraint firstItem="KW9-6u-zzU" firstAttribute="top" secondItem="ppM-4H-Xsb" secondAttribute="top" constant="35" id="Fud-tH-U49"/>
+                                                        <constraint firstItem="cZj-bW-bLh" firstAttribute="top" secondItem="ppM-4H-Xsb" secondAttribute="top" constant="284" id="JAA-Ft-qDx"/>
+                                                        <constraint firstItem="gyJ-q2-q57" firstAttribute="leading" secondItem="ppM-4H-Xsb" secondAttribute="leading" constant="18" id="KVA-bm-VCR"/>
+                                                        <constraint firstItem="KW9-6u-zzU" firstAttribute="leading" secondItem="ppM-4H-Xsb" secondAttribute="leading" constant="18" id="NLJ-lI-fgr"/>
+                                                        <constraint firstAttribute="trailing" secondItem="UBo-K9-Mi0" secondAttribute="trailing" constant="219" id="OPp-Cf-Zty"/>
+                                                        <constraint firstAttribute="bottom" secondItem="UBo-K9-Mi0" secondAttribute="bottom" constant="63" id="OQ4-1x-SDY"/>
+                                                        <constraint firstItem="UBo-K9-Mi0" firstAttribute="leading" secondItem="ppM-4H-Xsb" secondAttribute="leading" constant="18" id="PPv-lg-D2l"/>
+                                                        <constraint firstAttribute="trailing" secondItem="KW9-6u-zzU" secondAttribute="trailing" constant="21" id="T5e-el-z3G"/>
+                                                        <constraint firstAttribute="bottom" secondItem="KW9-6u-zzU" secondAttribute="bottom" constant="124" id="TNi-R1-0Wp"/>
+                                                        <constraint firstAttribute="trailing" secondItem="coC-Fu-JAh" secondAttribute="trailing" constant="38" id="VIG-wK-oeg"/>
+                                                        <constraint firstItem="INE-s4-jMH" firstAttribute="top" secondItem="ppM-4H-Xsb" secondAttribute="top" constant="259" id="W5Q-Kg-Dri"/>
+                                                        <constraint firstAttribute="bottom" secondItem="coC-Fu-JAh" secondAttribute="bottom" constant="95" id="WB1-Dm-Fvc"/>
+                                                        <constraint firstItem="UBo-K9-Mi0" firstAttribute="top" secondItem="ppM-4H-Xsb" secondAttribute="top" constant="259" id="YAI-VC-gPu"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gyJ-q2-q57" secondAttribute="trailing" constant="125" id="dct-e6-ibE"/>
+                                                        <constraint firstAttribute="bottom" secondItem="cZj-bW-bLh" secondAttribute="bottom" constant="27" id="hj2-y7-0jY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="cZj-bW-bLh" secondAttribute="trailing" constant="127" id="hkc-cA-7xf"/>
+                                                        <constraint firstItem="gyJ-q2-q57" firstAttribute="top" secondItem="ppM-4H-Xsb" secondAttribute="top" constant="284" id="kGk-Np-HVq"/>
+                                                        <constraint firstItem="INE-s4-jMH" firstAttribute="leading" secondItem="ppM-4H-Xsb" secondAttribute="leading" constant="44" id="mFh-sV-Tqb"/>
+                                                        <constraint firstItem="cZj-bW-bLh" firstAttribute="leading" secondItem="ppM-4H-Xsb" secondAttribute="leading" constant="16" id="mef-aD-gsM"/>
+                                                        <constraint firstAttribute="bottom" secondItem="gyJ-q2-q57" secondAttribute="bottom" constant="27" id="nvN-qc-Tcv"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="INE-s4-jMH" secondAttribute="trailing" constant="20" symbolic="YES" id="owS-ST-deG"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="253" height="343"/>
+                                                <connections>
+                                                    <outlet property="coupon" destination="cZj-bW-bLh" id="UTC-pH-C8E"/>
+                                                    <outlet property="imgView" destination="KW9-6u-zzU" id="qXq-u7-RcG"/>
+                                                    <outlet property="nameLable" destination="coC-Fu-JAh" id="e29-6L-ovG"/>
+                                                    <outlet property="noFree" destination="gyJ-q2-q57" id="ASI-dg-pY4"/>
+                                                    <outlet property="pointAndDistance" destination="INE-s4-jMH" id="BJG-Xq-3c7"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="reusableView" id="u18-sK-w6j" customClass="ReusableView" customModule="CoupangEats" customModuleProvider="target">
+                                            <rect key="frame" x="253" y="0.0" width="89" height="344"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pyg-dg-w9f">
+                                                    <rect key="frame" x="39" y="204" width="42" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="q8A-qE-HpS">
+                                                    <rect key="frame" x="54" y="175" width="27" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" image="arrow.right" catalog="system">
+                                                        <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="pyg-dg-w9f" secondAttribute="bottom" constant="122" id="BdV-Pl-Iuh"/>
+                                                <constraint firstAttribute="trailing" secondItem="pyg-dg-w9f" secondAttribute="trailing" constant="8" id="Ety-iQ-y8h"/>
+                                                <constraint firstItem="pyg-dg-w9f" firstAttribute="leading" secondItem="u18-sK-w6j" secondAttribute="leading" constant="39" id="Mwe-Jg-gqz"/>
+                                                <constraint firstAttribute="bottom" secondItem="q8A-qE-HpS" secondAttribute="bottom" constant="146" id="TOI-DQ-nA8"/>
+                                                <constraint firstItem="pyg-dg-w9f" firstAttribute="top" secondItem="u18-sK-w6j" secondAttribute="top" constant="204" id="TVg-WE-w6O"/>
+                                                <constraint firstItem="q8A-qE-HpS" firstAttribute="leading" secondItem="u18-sK-w6j" secondAttribute="leading" constant="54" id="dWl-1V-q9Z"/>
+                                                <constraint firstItem="q8A-qE-HpS" firstAttribute="top" secondItem="u18-sK-w6j" secondAttribute="top" constant="175" id="jTr-50-oHe"/>
+                                                <constraint firstAttribute="trailing" secondItem="q8A-qE-HpS" secondAttribute="trailing" constant="8" id="ua2-kF-ARE"/>
+                                            </constraints>
+                                            <connections>
+                                                <outlet property="moreButton" destination="q8A-qE-HpS" id="Mgl-b8-Saf"/>
+                                            </connections>
+                                        </collectionReusableView>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="XLG-4O-7Tk"/>
+                                        </connections>
+                                    </collectionView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="골라먹는 맛집" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hlu-HK-Ek4">
+                                        <rect key="frame" x="14" y="694" width="109" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JTQ-Mp-MIp">
+                                        <rect key="frame" x="39" y="730" width="68" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="추천순">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="0Xb-xS-Cjn">
+                                        <rect key="frame" x="134" y="730" width="89" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <state key="normal" title="치타배달" image="스크린샷 2020-12-02 오후 6.30.40">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="paY-ke-QxW">
+                                        <rect key="frame" x="248" y="730" width="78" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <state key="normal" title="할인쿠폰">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2020-12-02 오후 5.35.06" id="NCs-7b-6oS">
+                                        <rect key="frame" x="18" y="800" width="268" height="157"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2020-12-02 오후 5.36.28" id="8dF-ap-MU5">
+                                        <rect key="frame" x="301" y="800" width="93" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2020-12-02 오후 5.36.17" id="vTg-fX-pyY">
+                                        <rect key="frame" x="301" y="880" width="93" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22분 ~ 33분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ChB-6Z-bYn">
+                                        <rect key="frame" x="318" y="970" width="76" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2020-12-02 오후 5.44.09" id="qB4-b0-uTX">
+                                        <rect key="frame" x="20" y="1049" width="268" height="157"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2020-12-02 오후 5.44.00" id="6BH-dJ-6gj">
+                                        <rect key="frame" x="303" y="1049" width="93" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2020-12-02 오후 5.44.30" id="075-Pc-vAS">
+                                        <rect key="frame" x="303" y="1129" width="93" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2020-12-02 오후 5.47.52" id="abQ-Ep-F8f">
+                                        <rect key="frame" x="20" y="1298" width="268" height="157"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2020-12-02 오후 5.47.23" id="xyA-Ek-wOP">
+                                        <rect key="frame" x="303" y="1298" width="93" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2020-12-02 오후 5.47.41" id="4Q3-1b-2uD">
+                                        <rect key="frame" x="303" y="1378" width="93" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배다리 닭칼국수" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qQ3-6k-Jhi">
+                                        <rect key="frame" x="19" y="962" width="197" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" id="ada-IY-9J6">
+                                        <rect key="frame" x="19" y="990.66666666666663" width="16" height="13.666666666666666"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.0(1) · 3.0km · 배달비 2000원" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5O9-yL-ixG">
+                                        <rect key="frame" x="37" y="991" width="161" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10분 ~ 13분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WIH-8H-n9z">
+                                        <rect key="frame" x="320" y="1222" width="72" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="피자헛 진흥점" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7ml-Lg-3pz">
+                                        <rect key="frame" x="21" y="1214" width="197" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" id="I6T-VU-WS7">
+                                        <rect key="frame" x="21" y="1242" width="16" height="13.666666666666666"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.0(3) · 2.0km · 배달비 4000원" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RrG-tj-h30">
+                                        <rect key="frame" x="39" y="1243" width="161" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5분 ~ 10분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NUR-Zz-eDT">
+                                        <rect key="frame" x="329" y="1471" width="65" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="버거킹 주안점" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rdd-pF-GBj">
+                                        <rect key="frame" x="19" y="1463" width="197" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" id="67j-KA-pej">
+                                        <rect key="frame" x="19" y="1491" width="16" height="13.666666666666666"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.7(10) · 4.0km · 배달비 3000원" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OPI-xY-4G8">
+                                        <rect key="frame" x="37" y="1492" width="161" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2020-12-02 오후 5.50.19" id="k58-ON-4UY">
+                                        <rect key="frame" x="19" y="1539" width="268" height="157"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2020-12-02 오후 5.50.34" id="wtS-56-csj">
+                                        <rect key="frame" x="302" y="1539" width="93" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2020-12-02 오후 5.50.43" id="ZVh-2Y-Xnr">
+                                        <rect key="frame" x="302" y="1619" width="93" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3분 ~ 5분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z5Z-Re-TYS">
+                                        <rect key="frame" x="336" y="1712" width="59" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KFC 학익점" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y45-KW-Rm9">
+                                        <rect key="frame" x="18" y="1704" width="197" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" id="vlk-JP-GWz">
+                                        <rect key="frame" x="18" y="1732" width="16" height="13.666666666666666"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.2(23) · 1.2km · 배달비 1000원" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sL2-xM-XCa">
+                                        <rect key="frame" x="36" y="1733" width="161" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="bi1-5S-w5Z">
+                                        <rect key="frame" x="349" y="730" width="53" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="배달비">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="h5Y-NF-ziq" firstAttribute="top" secondItem="FqY-0D-Vp6" secondAttribute="bottom" constant="21" id="aAh-SX-2d1"/>
+                                    <constraint firstItem="FqY-0D-Vp6" firstAttribute="leading" secondItem="yoW-cu-sfg" secondAttribute="leading" id="bTQ-va-oL0"/>
+                                    <constraint firstAttribute="trailing" secondItem="FqY-0D-Vp6" secondAttribute="trailing" id="het-zg-ZdY"/>
+                                    <constraint firstItem="FqY-0D-Vp6" firstAttribute="top" secondItem="hnW-8D-dP2" secondAttribute="top" constant="173" id="plg-e6-hV3"/>
+                                    <constraint firstItem="FqY-0D-Vp6" firstAttribute="trailing" secondItem="yoW-cu-sfg" secondAttribute="trailing" id="tPZ-Dw-37y"/>
+                                    <constraint firstAttribute="bottom" secondItem="FqY-0D-Vp6" secondAttribute="bottom" constant="1750" id="vUy-K0-7PD"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="pGF-iZ-ALd"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="hnW-8D-dP2"/>
+                            </scrollView>
+                            <navigationBar opaque="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUv-PK-bRX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem id="GMX-kS-LU8">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" landscapeImage="스크린샷 2020-12-02 오후 2.06.53" largeContentSizeImage="스크린샷 2020-12-02 오후 2.06.53" style="done" id="n13-J2-ln0">
+                                            <imageReference key="image" image="location.fill" catalog="system" symbolScale="medium" renderingMode="template"/>
+                                            <inset key="imageInsets" minX="41" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <color key="tintColor" systemColor="systemYellowColor"/>
+                                        </barButtonItem>
+                                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="주소를 입력해주세요" textAlignment="natural" minimumFontSize="17" id="qcc-OA-9yr">
+                                            <rect key="frame" x="88" y="5" width="163" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <rightBarButtonItems>
+                                            <barButtonItem id="yBv-dM-AHZ">
+                                                <imageReference key="image" image="bag" catalog="system" renderingMode="original"/>
+                                            </barButtonItem>
+                                            <barButtonItem id="smI-9j-NhP">
+                                                <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large" renderingMode="original"/>
+                                            </barButtonItem>
+                                            <barButtonItem largeContentSizeImage="스크린샷 2020-12-02 오후 2.06.57" id="XTJ-zX-RVo">
+                                                <imageReference key="image" image="chevron.down" catalog="system" symbolScale="medium"/>
+                                                <inset key="imageInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tabBar contentMode="scaleToFill" itemPositioning="centered" id="c6Q-QM-eo8">
+                                <rect key="frame" x="0.0" y="1917" width="414" height="83"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <tabBarItem title="홈" image="home_icon_128838" id="Vtl-Pg-r6p">
+                                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
+                                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="검색" image="magnifyingglass" catalog="system" id="Hzv-SR-8Zr"/>
+                                    <tabBarItem title="즐겨찾기" image="heart" catalog="system" id="ka7-WT-4vi"/>
+                                    <tabBarItem title="주문내역" image="pngwing.com" id="2HQ-yM-CYO"/>
+                                    <tabBarItem title="My 이츠" image="person" catalog="system" landscapeImage="스크린샷 2020-11-28 오후 4.17.59" id="eiR-kW-kay"/>
+                                </items>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedImageTintColor" systemColor="labelColor"/>
+                            </tabBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h4E-zi-vxO" firstAttribute="bottom" secondItem="c6Q-QM-eo8" secondAttribute="top" id="6Uv-sw-tY5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c6Q-QM-eo8" secondAttribute="trailing" id="9fR-OT-3kn"/>
+                            <constraint firstItem="h4E-zi-vxO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FXG-IQ-1JZ"/>
+                            <constraint firstItem="c6Q-QM-eo8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YHU-xg-aQR"/>
+                            <constraint firstItem="h4E-zi-vxO" firstAttribute="top" secondItem="DUv-PK-bRX" secondAttribute="bottom" id="gzg-pd-jeP"/>
+                            <constraint firstItem="DUv-PK-bRX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hKQ-nS-u1f"/>
+                            <constraint firstItem="c6Q-QM-eo8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i4F-76-wG4"/>
+                            <constraint firstItem="h4E-zi-vxO" firstAttribute="leading" secondItem="DUv-PK-bRX" secondAttribute="leading" id="kzQ-TP-Kbn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h4E-zi-vxO" secondAttribute="trailing" id="mMX-yI-vc8"/>
+                            <constraint firstItem="h4E-zi-vxO" firstAttribute="trailing" secondItem="DUv-PK-bRX" secondAttribute="trailing" id="rGs-Re-CAD"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="2000"/>
+                    <connections>
+                        <outlet property="bottomCollectionView" destination="sST-A1-e7U" id="lul-0n-dpn"/>
+                        <outlet property="topCollectionView" destination="FqY-0D-Vp6" id="MCU-E0-CsX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-720.28985507246387" y="131.91964285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.forward" catalog="system" width="128" height="98"/>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="home_icon_128838" width="32" height="32"/>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="pngwing.com" width="24" height="24"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="스크린샷 2020-11-28 오후 2.09.26" width="1070" height="426"/>
+        <image name="스크린샷 2020-11-28 오후 4.17.59" width="128" height="128"/>
+        <image name="스크린샷 2020-12-02 오후 2.06.53" width="18" height="20"/>
+        <image name="스크린샷 2020-12-02 오후 2.06.57" width="20" height="20"/>
+        <image name="스크린샷 2020-12-02 오후 5.35.06" width="784" height="626"/>
+        <image name="스크린샷 2020-12-02 오후 5.36.17" width="820" height="652"/>
+        <image name="스크린샷 2020-12-02 오후 5.36.28" width="886" height="1112"/>
+        <image name="스크린샷 2020-12-02 오후 5.44.00" width="982" height="748"/>
+        <image name="스크린샷 2020-12-02 오후 5.44.09" width="796" height="620"/>
+        <image name="스크린샷 2020-12-02 오후 5.44.30" width="664" height="552"/>
+        <image name="스크린샷 2020-12-02 오후 5.47.23" width="1232" height="1098"/>
+        <image name="스크린샷 2020-12-02 오후 5.47.41" width="948" height="734"/>
+        <image name="스크린샷 2020-12-02 오후 5.47.52" width="818" height="646"/>
+        <image name="스크린샷 2020-12-02 오후 5.50.19" width="800" height="720"/>
+        <image name="스크린샷 2020-12-02 오후 5.50.34" width="860" height="464"/>
+        <image name="스크린샷 2020-12-02 오후 5.50.43" width="928" height="684"/>
+        <image name="스크린샷 2020-12-02 오후 6.30.40" width="25" height="20"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
